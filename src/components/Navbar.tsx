@@ -16,6 +16,9 @@ const Navbar = () => {
   const handleCategories = () => {
     navigate('/category')
   }
+  const handleCreate = () => {
+    navigate('/create')
+  }
 
 
   return (
@@ -42,7 +45,7 @@ const Navbar = () => {
                   <button onClick={handleRegister} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Register</button>
                   <button onClick={handleLogin} className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Login</button>
                   <button onClick={handleCategories}  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Categories</button>
-                  
+                  <button onClick={handleCreate}  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Create</button>
                   
                 </div>
               </div>

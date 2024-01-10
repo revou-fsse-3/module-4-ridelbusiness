@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Category } from './types';
 import { useNavigate } from 'react-router-dom';
 
-const CategoryList = () => {
+const CategoryPage = () => {
 
   const navigate = useNavigate();
   const [categories, setCategories] = useState<Category[]>([]);
@@ -74,4 +74,4 @@ const CategoryList = () => {
   );
 };
 
-export default CategoryList;
+export default CategoryPage;

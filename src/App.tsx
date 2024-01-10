@@ -1,19 +1,14 @@
 
 import './App.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
-//import Navbar from './components/Navbar';
-
-//import CategoryPage from './containers/CategoryPage'
-//import RegisterForm from './containers/RegisterForm'
-//import Register from './containers/Register';
-//import Login from './containers/Login'; 
-//import Category from './containers/Category'; 
+import HomeContainer from './containers/HomeContainer';
 
 import RegisterForm from './containers/RegisterForm';
 import LoginForm from './containers/LoginForm'; 
 import CategoryPage from './containers/CategoryPage';
-import HomeContainer from './containers/HomeContainer';
+
 import PublicLayout from './layouts/PublicLayout';
+import CreatePage from './containers/CreatePage';
 
 
 const router = createBrowserRouter([
@@ -28,7 +23,9 @@ const router = createBrowserRouter([
       { path: "/login", 
       element: <LoginForm /> },
       { path: "/category",
-       element: <CategoryPage /> }
+       element: <CategoryPage /> },
+       { path: "/create",
+       element: <CreatePage /> }
       
       
     ],
